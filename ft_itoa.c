@@ -6,7 +6,7 @@
 /*   By: joluiz-d <joluiz-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 18:20:08 by joluiz-d          #+#    #+#             */
-/*   Updated: 2021/09/18 18:31:59 by joluiz-d         ###   ########.fr       */
+/*   Updated: 2021/09/18 20:38:55 by joluiz-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,60 +21,53 @@
 *	The string representing the integer. NULL if the allocation fails.
 */
 
-static int	ft_intlen(int	n)
+static int	len_n(int n)
 {
 	int	len;
 
 	len = 0;
 	while (n)
 	{
-		n /= 10;
-		++len;
+		n = n / 10;
+		len++;
 	}
 	return (len);
 }
 
-static char	*ft_convert(int	n, char	*str)
+static char	*converter(int	n)
 {
-	int	len;
+	int		len;
+	char	*n_str;
+	char	signal;
 
+	len = 0;
+	signal = 0;
 	if (n < 0)
 	{
 		n *= -1;
-		len = (ft_intlen(n) + 2);
-		str = (char *)malloc(len * sizeof(*str));
-		if (!str)
-			return (NULL);
-		str[0] = '-';
+		len++;
+		signal = 1;
 	}
-	else
+	len += len_n(n);
+	n_str = (char *)malloc((len + 1) * sizeof(*n_str));
+	if (n_str == NULL)
+		return (NULL);
+	n_str[len] = '\0';
+	if (signal == 1)
+		n_str[0] = '-';
+	while (n != 0)
 	{
-		len = (ft_intlen(n) + 1);
-		str = (char *)malloc(len * sizeof(*str));
-		if (!str)
-			return (NULL);
-	}
-	str[--len] = '\0';
-	while (n > 0)
-	{
-		str[--len] = (n % 10) + '0';
+		n_str[--len] = n % 10 + '0';
 		n /= 10;
 	}
-	return (str);
+	return (n_str);
 }
 
 char	*ft_itoa(int	n)
 {
-	char	*str;
-
-	str = 0;
-	if (n < -2147483648 || n > 2147483647)
-		return (NULL);
 	if (n == -2147483648)
-		str = ft_strdup("-2147483648");
+		return (ft_strdup("-2147483648"));
 	else if (n == 0)
-		str = ft_strdup("0");
-	else
-		str = ft_convert(n, str);
-	return (str);
+		return (ft_strdup("0"));
+	return (converter(n));
 }
