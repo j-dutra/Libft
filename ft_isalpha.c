@@ -6,7 +6,7 @@
 /*   By: joluiz-d <joluiz-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 20:22:06 by joluiz-d          #+#    #+#             */
-/*   Updated: 2021/09/17 22:11:19 by joluiz-d         ###   ########.fr       */
+/*   Updated: 2021/09/18 20:53:41 by joluiz-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@
 *	returns non-zero if the character tests true.
 */
 
-int	ft_isalpha(char	c)
+int	ft_isalpha(int	c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 		return (1);
