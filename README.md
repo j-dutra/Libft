@@ -22,7 +22,7 @@
 </h2>
 <img src=https://github.com/j-dutra/42projects_pics/blob/master/score_100.png alt=j-dutra's 42Project Score/>
 <h4>Completed</h4>
-<img src=https://github.com/j-dutra/42projects_pics/blob/master/libftm.png alt=j-dutra's 42Project Badge/>
+<img src=https://github.com/edmarpaulino/42projects_pics/blob/master/libftm.png alt=j-dutra's 42Project Badge/>
 </div>
 
 ---
