@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joluiz-d <joluiz-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 23:26:20 by joluiz-d          #+#    #+#             */
-/*   Updated: 2021/09/17 22:23:41 by joluiz-d         ###   ########.fr       */
+/*   Updated: 2021/11/25 14:04:26 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 *	NULL if the allocation fails.
 */
 
-char	*ft_strmapi(char const	*s, char	(*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*new_str;
 	unsigned int	idx;

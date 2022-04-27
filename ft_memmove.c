@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joluiz-d <joluiz-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 15:37:08 by joluiz-d          #+#    #+#             */
-/*   Updated: 2021/09/17 22:16:24 by joluiz-d         ###   ########.fr       */
+/*   Updated: 2021/11/25 14:02:14 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 *	The memmove() function returns the original value of dst.
 */
 
-void	*ft_memmove(void	*dst, const void	*src, size_t	len)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	char		*destine;
 	const char	*source;

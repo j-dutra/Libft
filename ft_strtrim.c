@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joluiz-d <joluiz-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 23:30:15 by joluiz-d          #+#    #+#             */
-/*   Updated: 2021/09/17 22:22:07 by joluiz-d         ###   ########.fr       */
+/*   Updated: 2021/11/25 14:05:11 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 *	Return value The trimmed string. NULL if the allocation fails.
 */
 
-char	*ft_strtrim(char const	*s1, char const	*set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	len;
 

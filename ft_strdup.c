@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joluiz-d <joluiz-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 17:06:37 by joluiz-d          #+#    #+#             */
-/*   Updated: 2021/09/17 22:27:58 by joluiz-d         ###   ########.fr       */
+/*   Updated: 2021/11/25 14:03:26 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 
 #include "libft.h"
 
-char	*ft_strdup(const char	*s1)
+char	*ft_strdup(const char *s1)
 {
 	size_t	size;
 	char	*ptr;

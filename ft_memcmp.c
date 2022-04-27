@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joluiz-d <joluiz-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 19:54:24 by joluiz-d          #+#    #+#             */
-/*   Updated: 2021/09/17 22:15:02 by joluiz-d         ###   ########.fr       */
+/*   Updated: 2021/11/25 14:01:52 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@
 *	of the returned value.
 */
 
-int	ft_memcmp(const void	*s1, const void	*s2, size_t	n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	if (n == 0)
 		return (0);

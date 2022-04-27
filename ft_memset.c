@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joluiz-d <joluiz-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 23:26:08 by joluiz-d          #+#    #+#             */
-/*   Updated: 2021/09/17 22:17:15 by joluiz-d         ###   ########.fr       */
+/*   Updated: 2021/11/25 14:02:29 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 *	The memset() function returns its first argument.
 */
 
-void	*ft_memset(void	*s, int	c, size_t	len)
+void	*ft_memset(void *s, int c, size_t len)
 {
 	unsigned char	*su;
 	size_t			idx;

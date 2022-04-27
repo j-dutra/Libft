@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joluiz-d <joluiz-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 22:00:54 by joluiz-d          #+#    #+#             */
-/*   Updated: 2021/09/17 22:10:05 by joluiz-d         ###   ########.fr       */
+/*   Updated: 2021/11/25 14:00:48 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@
 
 #include "libft.h"
 
-void	*ft_calloc(size_t	count, size_t	size)
+void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;
 

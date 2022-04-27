@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joluiz-d <joluiz-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 00:13:17 by joluiz-d          #+#    #+#             */
-/*   Updated: 2021/09/17 22:15:34 by joluiz-d         ###   ########.fr       */
+/*   Updated: 2021/11/25 14:02:05 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 *	The memcpy() function returns the original value of dst.
 */
 
-void	*ft_memcpy(void	*dst, const void	*src, size_t	n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	unsigned char	*destine;
 	unsigned char	*source;

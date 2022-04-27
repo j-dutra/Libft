@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joluiz-d <joluiz-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 21:35:00 by joluiz-d          #+#    #+#             */
-/*   Updated: 2021/09/17 22:51:45 by joluiz-d         ###   ########.fr       */
+/*   Updated: 2021/11/25 14:09:10 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 *	The atoi() function returns its converted int representation.
 */
 
-int	ft_atoi(const char	*str)
+int	ft_atoi(const char *str)
 {
 	int	res;
 	int	sign;

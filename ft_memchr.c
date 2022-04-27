@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joluiz-d <joluiz-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 22:58:01 by joluiz-d          #+#    #+#             */
-/*   Updated: 2021/09/17 22:14:34 by joluiz-d         ###   ########.fr       */
+/*   Updated: 2021/11/25 14:01:43 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 *	no such byte exists within n bytes.
 */
 
-void	*ft_memchr(const void	*s, int	c, size_t	n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	while (n--)
 	{

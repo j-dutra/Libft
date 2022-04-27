@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joluiz-d <joluiz-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 18:20:08 by joluiz-d          #+#    #+#             */
-/*   Updated: 2021/09/18 20:38:55 by joluiz-d         ###   ########.fr       */
+/*   Updated: 2021/11/25 14:18:27 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ static int	len_n(int n)
 	return (len);
 }
 
-static char	*converter(int	n)
+static char	*converter(int n)
 {
 	int		len;
 	char	*n_str;
@@ -63,7 +63,7 @@ static char	*converter(int	n)
 	return (n_str);
 }
 
-char	*ft_itoa(int	n)
+char	*ft_itoa(int n)
 {
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));

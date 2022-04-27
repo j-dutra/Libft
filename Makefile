@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: joluiz-d <joluiz-d@student.42.fr>          +#+  +:+       +#+         #
+#    By: coder <coder@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/07 16:04:57 by joluiz-d          #+#    #+#              #
-#    Updated: 2021/09/17 19:46:37 by joluiz-d         ###   ########.fr        #
+#    Updated: 2021/11/25 22:38:25 by coder            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,6 @@ SRC				=	ft_isalpha.c \
 					ft_putendl_fd.c \
 					ft_putnbr_fd.c
 OBJ				=	$(SRC:.c=.o)
-OBJ_BONUS		=	$(SRC_BONUS:.c=.o)
 	
 HEADER_DIR		=	.
 	
@@ -58,9 +57,6 @@ CFLAGS			=	-Wall -Wextra -Werror
 
 all:		$(NAME)
 
-bonus:	$(NAME) $(OBJ_BONUS)
-	ar cr $(NAME) $(OBJ) $(OBJ_BONUS)
-
 %.o:		%.c
 	$(CC) $(CFLAGS) -c $< -o $@ -I $(HEADER_DIR)
 
@@ -68,16 +64,11 @@ $(NAME):	$(OBJ)
 	ar cr $(NAME) $(OBJ)
 
 clean:
-	rm -f $(OBJ) $(OBJ_BONUS)
+	rm -f $(OBJ)
 
 fclean:		clean
 	rm -f $(NAME)
 
 re:			fclean all
 
-rebonus:	fclean bonus
-
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
-	gcc -nostartfiles -shared -o libft.so $(OBJ)
-	
+.PHONY:	all clean fclean re

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joluiz-d <joluiz-d@student.42.fr>          +#+  +:+       +#+        */
+/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 23:52:20 by joluiz-d          #+#    #+#             */
-/*   Updated: 2021/09/17 22:53:14 by joluiz-d         ###   ########.fr       */
+/*   Updated: 2021/11/25 14:09:02 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 *	- 
 */
 
-void	ft_bzero(void	*s, size_t	n)
+void	ft_bzero(void *s, size_t n)
 {
 	size_t			idx;
 	unsigned char	*str;
